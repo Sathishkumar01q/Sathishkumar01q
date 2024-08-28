@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +49,51 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="book_name">Book Name:</label>
+                        <input type="text" name="book_name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book_author">Author ID:</label>
+                        <select class="form-control" name="book_author">
+                            <option>-Select author-</option>
+                            <option>Robert Kiyosaki</option>
+                            <option>H.G Wells</option>
+                            <option>Mary Roach</option>
+                            <option>William Shakespeare</option>
+                            <option>F.Scott Fitzgerald</option>
+                            <option>Katherine Mayo</option>
+                            <option>John Milton</option>
+                            <option>Chales Darwin</option>
+                            <option>Robert Jorden</option>
+                            <option>Sarojini Naidu</option>
+                            <option>Leo Tolstory</option>
+                            <option>Adam Smith</option>
 
+                        </select>
+                        <!--<input type="text" name="book_author" class="form-control" required> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="book_no">Book Number:</label>
+                        <input type="text" name="book_no" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student_id">Student ID:</label>
+                        <input type="text" name="student_id" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="issue_date">Issue Date:</label>
+                        <input type="text" name="issue_date" class="form-control" value="<?php echo date("yy-m-d");?>
+                    </div>
+                    <button type="submit" name="issue_book" class="btn btn-primary">Issue Book</button>
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
